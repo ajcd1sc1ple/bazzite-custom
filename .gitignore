@@ -1,1 +1,2 @@
 *.rpm
+.github/workflows/build.yml
