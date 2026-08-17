@@ -20,5 +20,11 @@ dnf install -y \
 rsync -rlptD /ctx/files/ /
 systemctl enable bootc-fetch-apply-updates.timer
 
+# === gaming: Gaming packages ===
+dnf5 -y copr enable faugus/faugus-launcher
+
+dnf install -y \
+    faugus-launcher
+
 # === cleanup ===
 dnf clean all && rm -rf /var/cache/dnf/*

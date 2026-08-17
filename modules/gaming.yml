@@ -1,0 +1,8 @@
+description: Gaming packages
+
+packages:
+  - faugus-launcher
+
+repos:
+  copr:
+    - faugus/faugus-launcher
