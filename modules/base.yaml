@@ -1,0 +1,28 @@
+description: Base system packages and configuration
+packages:
+- tmux
+- dcli-bootc
+- printer-driver-brlaser
+remove: []
+repos:
+  copr:
+  - theblackdon/dcli-bootc
+  - stenstorp/brlaser
+  rpm_urls: []
+  apt_lines: []
+  enable: []
+  import_keys: []
+remote_rpms: []
+local_rpms: []
+flatpak_remotes: []
+flatpaks: []
+remove_flatpaks: []
+files:
+  - usr/lib/bootc/kargs.d/99-intel-cstate.conf
+services:
+- bootc-fetch-apply-updates.timer
+first_boot_services: []
+scripts:
+  pre: null
+  post: null
+depends: []

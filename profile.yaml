@@ -1,0 +1,8 @@
+name: dcli-image
+base_image: ghcr.io/ublue-os/bazzite:stable
+nvidia_base_image: ghcr.io/ublue-os/bazzite-nvidia-open:stable
+default_tag: latest
+enabled_modules:
+- base
+package_manager: dnf
+dotfiles: []
